@@ -98,6 +98,28 @@ The Oneforall project is a clothing website built with Python and Django for the
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request for any changes or improvements.
 
+
+## Screenshots
+
+### Home Page
+![Home Page](website_img/homepage.png)
+
+### Product Page
+![Product Page](website_img/shoping.png)
+
+### Wish list Page
+![Shopping Cart](website_img/wishlist.png)
+
+### Shoping Cart Page
+![Admin Panel](website_img/shoping_cart.png)
+
+### Checkout Page
+![Admin Panel](website_img/checkout.png)
+
+### Orders Page
+![Admin Panel](website_img/myorders.png)
+
+
 ## License
 This project is licensed under the [MIT License](https://github.com/sibtc/django-multiple-user-types-example/blob/master/LICENSE).
 
