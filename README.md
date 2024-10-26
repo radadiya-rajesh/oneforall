@@ -97,8 +97,7 @@ The Oneforall project is a clothing website built with Python and Django for the
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request for any changes or improvements.
-
-
+<br><br>
 
 
 ## Screenshots
