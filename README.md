@@ -29,13 +29,13 @@ The Oneforall project is a clothing website built with Python and Django for the
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/oneforall.git
+    git clone https://github.com/Rajesh2825/oneforall.git
     cd oneforall
     ```
 
 2. Create a virtual environment (recommended):
     ```bash
-    python3 -m venv env
+    python -m venv env
     source env/bin/activate  # On Windows use `.\env\Scripts\activate`
     ```
 
@@ -81,11 +81,6 @@ The Oneforall project is a clothing website built with Python and Django for the
 - **Add to Cart:** Users can add products to their cart and proceed to checkout.
 - **Payment:** Payment is processed through Stripe, ensuring secure transactions.
 
-## Deployment
-For deploying the project to a production server, you may consider using services like Heroku, DigitalOcean, or AWS. Ensure to:
-- Set `DEBUG=False` in your settings.
-- Configure allowed hosts and secure HTTPS for production.
-- Set up a production-ready database.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request for any changes or improvements.
@@ -96,5 +91,4 @@ This project is licensed under the MIT License.
 ## Contact
 For any queries, please contact:
 
-**Author:** Your Name  
-**Email:** your_email@example.com
+**Author:** Radadiya Rajesh  
