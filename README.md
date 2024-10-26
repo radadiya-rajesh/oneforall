@@ -26,6 +26,7 @@ The Oneforall project is a clothing website built with Python and Django for the
 - MySQL
 - Stripe account for payment processing (for live use)
 
+
 ### Installation
 1. Clone the repository:
     ```bash
@@ -86,7 +87,7 @@ The Oneforall project is a clothing website built with Python and Django for the
 Contributions are welcome! Please fork the repository and create a pull request for any changes or improvements.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/sibtc/django-multiple-user-types-example/blob/master/LICENSE).
 
 ## Contact
 For any queries, please contact:
