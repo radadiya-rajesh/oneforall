@@ -1,0 +1,103 @@
+{% extends 'base.html' %} {% load static %} {% block body %}
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+  <div class="row px-xl-5">
+    <div class="col-12">
+      <nav class="breadcrumb bg-light mb-30">
+        <a class="breadcrumb-item text-dark" href="/">Home</a>
+        <span class="breadcrumb-item active">Login</span>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Contact Start -->
+
+<div class="form-content my-3 p-3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="card shadow-lg border-0 rounded-lg mt-0 mb-3">
+          <div class="card-header justify-content-center">
+            <div id="error_div"></div>
+            <h3 class="font-weight-light my-4 text-center">Login</h3>
+          </div>
+          {% if form.errors %}
+          <div class="alert alert-danger alert-dismissible" role="alert">
+            <div id="form_errors">
+              {% for key, value in form.errors.items %}
+              <strong>{{ value }}</strong>
+              {% endfor %}
+            </div>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="alert"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          {% endif %}
+          <div class="card-body">
+            <form
+              action="/login/"
+              method="post"
+              name="sentMessage"
+              id="contactForm"
+            >
+              {% csrf_token %}
+              <div class="form-row">
+                <div class="col-md-10 offset-md-1">
+                  <div class="form-group">
+                    <label class="small mb-1" for="uname">UserName</label>
+                    <input
+                      type="text"
+                      name="uname"
+                      class="form-control"
+                      required
+                      id="uname"
+                      placeholder="Enter UserName"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="small mb-1" for="pass">Password</label>
+                    <input
+                      type="password"
+                      name="pass1"
+                      class="form-control"
+                      required
+                      id="pass"
+                      placeholder="Enter Password"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-10 offset-md-1">
+                  <div class="form-group mt-0 mb-1">
+                    <button type="submit" class="col-md-12 btn btn-dark">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer text-center">
+            <div class="small">
+              <a href="{% url 'register' %}">Create A New Account</a
+              ><br /><br />
+              <a href="{% url 'password_reset' %}">Forgot Password ?</a><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact End -->
+
+{% endblock body %}
