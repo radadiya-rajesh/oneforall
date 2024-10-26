@@ -45,7 +45,18 @@ The Oneforall project is a clothing website built with Python and Django for the
     pip install -r requirements.txt
     ```
 
-4. Set up environment variables: Create a `.env` file in the project root with the following structure:
+4. Set up your MySQL database:
+   - Open MySQL and create a database named `oneforall`:
+     ```sql
+     CREATE DATABASE oneforall;
+     ```
+   - Execute the `oneforall.sql` file to set up the initial database schema:
+     ```sql
+     SOURCE path/to/your/oneforall.sql;
+     ```
+
+
+5. Set up environment variables: Create a `.env` file in the project root with the following structure:
     ```plaintext
     SECRET_KEY=your_django_secret_key
     EMAIL_HOST_USER=your_email@example.com
@@ -59,22 +70,23 @@ The Oneforall project is a clothing website built with Python and Django for the
     STRIPE_SECRET_KEY=your_stripe_secret_key
     ```
 
-5. Apply migrations:
+6. Apply migrations:
     ```bash
+    python manage.py makemigrations
     python manage.py migrate
     ```
 
-6. Create a superuser (admin account):
+7. Create a superuser (admin account):(optional)
     ```bash
     python manage.py createsuperuser
     ```
 
-7. Run the development server:
+8. Run the development server:
     ```bash
     python manage.py runserver
     ```
 
-8. Visit `http://127.0.0.1:8000` to see the website in action.
+9. Visit `http://127.0.0.1:8000` to see the website in action.
 
 ## Usage
 - **Browse Products:** Users can explore various categories of clothing items.
