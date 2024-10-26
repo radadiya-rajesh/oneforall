@@ -94,10 +94,7 @@ The Oneforall project is a clothing website built with Python and Django for the
 - **Add to Cart:** Users can add products to their cart and proceed to checkout.
 - **Payment:** Payment is processed through Stripe, ensuring secure transactions.
 
-
-## Contributing
-Contributions are welcome! Please fork the repository and create a pull request for any changes or improvements.
-<br><br>
+<br><br><br>
 
 
 ## Screenshots
@@ -119,6 +116,10 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ### Orders Page
 ![Admin Panel](website_img/myorders.png)
+
+
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request for any changes or improvements.
 
 
 ## License
