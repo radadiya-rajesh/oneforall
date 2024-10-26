@@ -21,7 +21,7 @@ The Oneforall project is a clothing website built with Python and Django for the
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.8+ (3.11.6)
 - Django 5.0.2
 - MySQL
 - Stripe account for payment processing (for live use)
