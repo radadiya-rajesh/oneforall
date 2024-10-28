@@ -30,7 +30,7 @@ The Oneforall project is a clothing website built with Python and Django for the
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Rajesh2825/oneforall.git
+    git clone https://github.com/radadiya-rajesh/oneforall.git
     cd oneforall
     ```
 
